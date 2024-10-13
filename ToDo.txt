@@ -1,0 +1,25 @@
+Step by step to riches!:
+    1 - Pick a strategy [Done]
+        - Flesh out strategy and test [2024-10-13]
+
+    2 - Choose a market (I prefer TSX for taxation purposes)
+        - Will be using TSX
+
+    3- Select API's and other technologies (ensure they apply to the market you chose)
+
+    4- Test strategy (do lots of research)
+
+    5 - Risk management (dont gamble ur life savings)
+        - Will be setting stop losses and take profits
+
+    6 - Paper trading 
+
+    7 - Once I have an established strategy automate it
+
+    8 - Add Security for unathourized trades
+
+Other notes:
+    Log all trades for taxing purposes (in a .xlsx)
+    Ensure strategy works on preferred stock exchange
+    See step 6: might try to incorporate ML so it learns from paper trading?
+    Pick a brokerage (I will likely choose Questtrade or Interactive Brokers), to execute trades

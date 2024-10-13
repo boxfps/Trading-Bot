@@ -1,0 +1,1 @@
+# This file will collect and handle stock data based on the provided list

@@ -1,0 +1,38 @@
+To keep the bot simple, I will be mostly trading natural resources stocks as
+they are quite a lot on the TSX (you can adjust based on your market).
+
+I will also be taking a very very safe approach to my trading strategy. Attempting to
+minimize risks, even if it means less overall returns.
+
+# TLDR ---------------------------------------
+Summary
+Entry: Buy when the 20-day EMA crosses above the 50-day EMA, confirmed by volume and price action.
+Exit: Sell when the 20-day EMA crosses below the 50-day EMA, using stop-loss and take-profit orders for risk management.
+Risk Management: Implement position sizing, diversification, and regular strategy reviews to minimize risks.
+----------------------------------------------
+
+I will be implementing a Moving Averages (MA) approach.
+
+1 - My Objectives
+    - Automatic trades
+    - Return ~5% or higher on a monthly basis
+
+2 - My indicators
+    - Buy when the 20 day EMA crosses above the 50 day EMA (bullish)
+    - Sell when the 20 Day EMA crosses below the 50 day EMA (bearish)
+
+3.1 - Entry Criteria
+    - Buy signal: EMA bullish crossover
+    - Confirm with a volume and trend check
+
+3.2 - Exit Criteria
+    - Sell signal: EMA bearish crossover
+    - Set stop loss orders to minimize losses
+    - Set take profit to secure profits
+    - Optionally set up time based exits
+    
+4 - Risk Management
+    - Using no more than 2% of my capital per trade (adjust as needed)
+    - Diversify (use more than one stock or sector)
+    - Check on the bot regularily to ensure I dont need to make changes
+
