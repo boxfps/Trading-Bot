@@ -11,28 +11,51 @@ Exit: Sell when the 20-day EMA crosses below the 50-day EMA, using stop-loss and
 Risk Management: Implement position sizing, diversification, and regular strategy reviews to minimize risks.
 ----------------------------------------------
 
-I will be implementing a Moving Averages (MA) approach.
+I will be implementing a very simple Moving Averages (MA) approach.
 
 1 - My Objectives
     - Automatic trades
+        - Kind of the point of having a bot do it for you!
     - Return ~5% or higher on a monthly basis
-
+        - Over time I would like to make this closer to 10% as I refine my strategy and make the code better.
 2 - My indicators
     - Buy when the 20 day EMA crosses above the 50 day EMA (bullish)
+        - Will run some arithmetic to find when the 20 day Exponential Moving Average
+        crosses above the 50 day EMA indicating a rise in stock price overtime. This
+        will help the bot decided when to buy. Probably will run the arithmetic every 10 minutes
+        or less depending on hardware restrictions.
+
     - Sell when the 20 Day EMA crosses below the 50 day EMA (bearish)
+        - Will sell the stock if the 20 day Exponential Moving Average falls below the 50 
+        day EMA, this is indicating a fall in the stock price is coming. Both buy and sell indicators 
+        will be calculated at the same time.
 
 3.1 - Entry Criteria
     - Buy signal: EMA bullish crossover
+        - Relatively straight forward idea, buy when the math believes the stock to be rising. I will
+        enter to the trade with no more than 2% of my total capital (subject to change).
     - Confirm with a volume and trend check
+        - I will run some validation before the bot buys to ensure it is not a false positive on the EMA. 
+        I will do this using some other math regarding the movement in price historically and that day. 
 
 3.2 - Exit Criteria
     - Sell signal: EMA bearish crossover
+        - Again simple strategy, sell when the math seems to be saying it is going down. I may tweak
+        this overtime to try and account for volatility
     - Set stop loss orders to minimize losses
+        - I would like to lose >10% per trade at most. Will have to tweak the number overtime with experience. 
     - Set take profit to secure profits
+        - Still undecided about this idea. I would like it to execute the trades for safety and security
+        but if I sell at one point and it continues to skyrocket higher. I will lose out. Need to implement 
+        a check for that. 
     - Optionally set up time based exits
-    
+        - I do not know if I will implement this. But it is not a bad idea if I want to make more short term trades.
 4 - Risk Management
     - Using no more than 2% of my capital per trade (adjust as needed)
+        - Given I have a smaller account and am trading less stock. I may up this number and use more % capital. 
     - Diversify (use more than one stock or sector)
+        - Currently using ~10 stocks on 2 different secotrs. Will look to diversify this more in the future. 
     - Check on the bot regularily to ensure I dont need to make changes
+        - Most likely will make a habit of periodically checking throughout the week and making tweaks to 
+        the bot on weekends when the markets are closed. 
 
